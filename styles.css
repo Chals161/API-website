@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "dancing";
+    src: url('Dancing_Script/DancingScript-VariableFont_wght.ttf');
+  }
+  
+  @font-face {
+    font-family: "playfair";
+    src: url('Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden; 
+  }
+  
+  .container {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15%;
+    overflow: hidden; 
+  }
+  
+  .content {
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden; 
+  }
+  
+  h1 {
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: "dancing";
+  }
+  
+  p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "playfair";
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "playfair";
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: rgb(111, 11, 11);
+  }
+  
+
+.halo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  
